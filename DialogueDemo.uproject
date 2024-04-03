@@ -1,0 +1,19 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "{E0FD8BB0-4B16-3052-6229-45858C25B4AC}",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "DialogueDemo",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "RenderDocPlugin",
+			"Enabled": true
+		}
+	]
+}
