@@ -9,7 +9,17 @@ public class DialogueDemo : ModuleRules
 		
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "UMG", "LlamaModel"});
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore", 
+			"UMG", 
+			"LlamaModel", 
+			"TaskDetector", 
+			"TaskScheduler"
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 		

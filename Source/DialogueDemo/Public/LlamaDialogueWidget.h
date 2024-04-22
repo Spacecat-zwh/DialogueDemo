@@ -2,10 +2,13 @@
 
 #pragma once
 
+#include "SchedulingSystem/TaskScheduler/Public/TaskScheduler.h"
 #include "LlamaInferenceTask.h"
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "LlamaDialogueWidget.generated.h"
+
+#define TARGET_INFERENCE_SPEED 45
 
 /**
  * 
@@ -32,6 +35,18 @@ public:
 
 	UFUNCTION(BlueprintCallable, Category="Llama Dialogue")
 	void LlamaInference();
+
+	UFUNCTION(BlueprintCallable, Category="Game Performance")
+	float GetAverageFPS();
+
+	UFUNCTION(BlueprintCallable, Category="Game Performance")
+	float GetInferenceSpeed();
+
+	UFUNCTION(BlueprintCallable, Category="Game Performance")
+	void SetTargetInferenceSpeed(const float Speed);
+
+	UFUNCTION(BlueprintCallable, Category="Scheduler")
+	void SetSchedulerState(const int State);
 	
 private:
 	FString prompts[5];
